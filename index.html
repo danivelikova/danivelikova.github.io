@@ -1,1 +1,146 @@
-Hello World
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Yordanka (Dani) Velikova</title>
+
+    <meta name="author" content="Dani Velikova">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Yordanka (Dani) Velikova
+                </p>
+                <p> I am a PhD researcher in the <a href="https://www.cs.cit.tum.de/camp/start/" target="camp">Computer-Aided Medical Procedures Lab (CAMP)</a> at the Technical University of Munich, under the supervision of <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/" target="navab"> Prof. Navab</a> where I work on Ultrasound image segmentation and Robotic Ultrasound.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:dani.velikova@tum.de">Email</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&user=-N2d-8QAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/danivelikova">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/danivelikova/">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/DaniVelikova.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profilepic3_circle.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  My research is primarily focused on unsupervised medical image segmentation in particular for ultrasound imaging as well as image-based robotic ultrasound navigation. 
+                  Beyond this, my interests branch into implicit neural representations, spectral embedding, shape completion, breathing compensation, and object tracking with transformers.                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+    
+      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/lotus_banner_img.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/lotus_banner_img.png' width="160">
+          </div>
+          <script type="text/javascript">
+            function zipnerf_start() {
+              document.getElementById('zipnerf_image').style.opacity = "1";
+            }
+
+            function zipnerf_stop() {
+              document.getElementById('zipnerf_image').style.opacity = "0";
+            }
+            zipnerf_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="http://danivelikova.github.io/lotus/">
+            <span class="papertitle">LOTUS: Learning to Optimize Task-based US representations</span>
+          </a>
+          <br>
+          <strong>Yordanka Velikova</strong>,
+          <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>,
+          <a href="https://waltersimson.com/">Walter Simson</a>,
+          <a href="https://vgonzalezd.github.io/">Vanessa Gonzalez Duque</a>,
+          <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
+          <br>
+          <em>MICCAI 2023 (Oral Presentation)</em>
+          <br>
+          <a href="http://danivelikova.github.io/lotus/">project page</a>
+          /
+          <a href="https://arxiv.org/abs/2307.16021">arXiv</a>
+          <p></p>
+          <p>
+          Optimizing Ulrasound Intermediate Representations guided by the segmentation task. Trained end-to-end with domain adaptation network to account for the domain gap between real and simulated.
+          </p>
+        </td>
+      </tr>
+
+      <tr onmouseout="rgbd_stop()" onmouseover="rgbd_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div id='rgbd_anim' class='hidden'><img src="images/cactuss.gif"></div>
+            <div id='rgbd_still'><img src="images/cactuss-still.jpg"></div>
+          </div>
+          <script type="text/javascript">
+            function rgbd_start() {
+              document.getElementById('rgbd_anim').style.display = 'inline';
+              document.getElementById('rgbd_still').style.display = 'none';
+            }
+
+            function rgbd_stop() {
+              document.getElementById('rgbd_anim').style.display = 'none';
+              document.getElementById('rgbd_still').style.display = 'inline';
+            }
+            rgbd_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="http://danivelikova.github.io/cactuss/">
+            <span class="papertitle">CACTUSS: Common Anatomical CT-US Space for US examinations </span>
+          </a>
+          <br>
+          <strong>Yordanka Velikova</strong>,  <a href="https://waltersimson.com/">Walter Simson</a>
+          <br>
+          <em>MICCAI, 2022 (Oral Presentation)</em>
+          <br>
+          <a href="https://arxiv.org/abs/2207.08619">Arxiv</a> / <a href="https://github.com/danivelikova/cactuss">Code</a> 
+          <p>By embedding mixtures of shapes &amp; lights into a soft segmentation of an image, and by leveraging the output of the Kinect, we can extend SIRFS to scenes.
+            <br>
+            <br>MICCAI Journal version: <a href="https://drive.google.com/file/d/1iQiUxZvjPPnb8rFCwXYesTgFSRk7mkAq/view?usp=sharing">version</a> / <a href="data/BarronMalikTPAMI2015B.bib">bibtex</a>
+          </p>
+        </td>
+      </tr>      
+      
+    </tbody></table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:right;font-size:small;">
+            Template webpage from <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+  </td>
+</tr>
+</table>
+</body>
+</html>
