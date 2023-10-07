@@ -1,0 +1,311 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:18px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1100px;
+	}
+	
+	h1 {
+		font-size:32px;
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		15px 15px 0 0px #fff, /* The fourth layer */
+		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		20px 20px 0 0px #fff, /* The fifth layer */
+		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		25px 25px 0 0px #fff, /* The fifth layer */
+		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+</style>
+
+<html>
+<head>
+	<title>This is my paper title</title>
+	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:title" content="Creative and Descriptive Paper Title." />
+	<meta property="og:description" content="Paper description." />
+
+	<!-- Get from Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src=""></script> 
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-75863369-6');
+	</script>
+</head>
+
+<body>
+	<br>
+	<center>
+		<span style="font-size:36px">LOTUS: Learning to Optimize Task-based US representations</span>
+		<br>
+		<span style="font-size:24px; font-style: italic; color: lightgray;">MICCAI 2023 (Oral Presentation)</span>
+
+		<table align=center width=600px>
+			<table align=center width=1000px>
+				<tr>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:16px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Yordanka Velikova<sup>1</sup></a></span>
+						</center>
+					</td>
+					<td align=center width=250px>
+						<center>
+							<span style="font-size:16px"><a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour<sup>1,2</sup></a></span>
+						</center>
+					</td>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:16px"><a href="https://waltersimson.com/">Walter Simson<sup>3</sup></a></span>
+						</center>
+					</td>
+					<td align=center width=250px>
+						<center>
+							<span style="font-size:16px"><a href="https://vgonzalezd.github.io/">Vanessa Gonzalez Duque<sup>1,4</sup></a></span>
+						</center>
+					</td>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:16px"><a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab<sup>1</sup></a></span>
+						</center>
+					</td>
+				</tr>
+			</table>
+			<table align=center width=1000px>
+				<tr>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:16px; color: gray;"><sup>1</sup>Technical University of Munich</a></span>
+						</center>
+					</td>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:16px; color: gray;"><sup>2</sup>Sharif University of Technology</a></span>
+						</center>
+					</td>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:16px; color: gray;"><sup>3</sup>Stanford University</a></span>
+						</center>
+					</td>
+					<td align=center width=200px>
+						<center>
+							<span style="font-size:16px; color: gray;"><sup>4</sup>Ecole Centrale Nantes</a></span>
+						</center>
+					</td>
+				</tr>
+			</table>
+			<table align=center width=500px>
+				<tr>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:20px"><a href='https://arxiv.org/abs/2307.16021'>[Paper]</a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:20px"><a href="./resources/bibtex.txt">[Bibtex]</a></span>
+						</center>
+					</td>
+					<td align=center width=120px>
+						<center>
+							<span style="font-size:20px"><a href='https://github.com/danivelikova/lotus'>[Code]</a></span><br>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</table>
+	</center>
+
+	<!-- Teaser GIF -->
+	<center>
+		<table align=center width=1000px>
+			<tr>
+				<td width=1000px>
+					<center>
+						<img src="resources/lotus_animation_bright.gif" width="800" height="150">
+					</center>
+				</td>
+			</tr>
+		</table>
+
+	<hr>
+
+	<table align=center width=850px>
+		<center><h2>Abstract</h2></center>
+		<tr>
+			<td>
+				<span style="font-size:14px"> Anatomical segmentation of organs in ultrasound images is essential to many clinical applications, particularly for diagnosis and monitoring. Existing deep neural networks require a large amount of labeled data for training in order to achieve clinically acceptable performance. Yet, in ultrasound, due to characteristic properties such as speckle and clutter, it is challenging to obtain accurate segmentation boundaries, and precise pixel-wise labeling of images is highly dependent on the expertise of physicians. In contrast, CT scans have higher resolution and improved contrast, easing organ identification. In this paper, we propose a novel approach for learning to optimize task-based ultra-sound image representations. Given annotated CT segmentation maps as a simulation medium, we model acoustic propagation through tissue via ray-casting to generate ultrasound training data. Our ultrasound simulator is fully differentiable and learns to optimize the parameters for generating physics-based ultrasound images guided by the downstream segmentation task. In addition, we train an image adaptation network between real and simulated images to achieve simultaneous image synthesis and automatic segmentation on US images in an end-to-end training setting. The proposed method is evaluated on aorta and vessel segmentation tasks and shows promising quantitative results. Furthermore, we also conduct qualitative results of optimized image representations on other organs.</span><br>
+			</td>
+		</tr>
+	</table>
+	<br>
+
+	<hr>
+	<center><h2>Video</h2></center>
+	<p align="center">
+		<iframe width="660" height="395" src="https://youtu.be/Esx3uf0XFIU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+	</p>
+
+
+	<hr>
+	<center><h1>Differentiable Ultrasound Renderer</h1></center>
+	<div class="center">
+        <img height="300"  src="resources/diff_renderer_pipeline.png" alt="Differentiable Ultrasound Renderer Pipeline">
+    </div>
+
+
+	<!-- LOTUS animation-->
+	<hr>
+	<center><h1>Optimized Image Representations</h1></center>
+	<center>
+		<table align=center width=1000px>
+			<tr>
+				<td width=1000px>
+					<center>
+						<video id="lotusVideo"  width="800" height="600" controls loop autoplay muted>
+							<source src="resources/lotus_opening_animation.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>	
+						<script>
+							document.getElementById('lotusVideo').playbackRate = 1.2;
+						</script>				
+					</center>
+				</td>
+			</tr>
+		</table>
+
+
+	<hr>
+
+	<center><h1>End-to-End Training Pipeline</h1></center>
+	<div class="center">
+        <img  height="300"  src="resources/overview.png" alt="End-to-End Training Pipeline">
+    </div>
+
+	<hr>
+
+	<center><h1>Results</h1></center>
+	<div class="center">
+        <img  width="800" height="600"  src="resources/inference_results.png" alt="Results during inference">
+    </div>
+
+
+
+	
+	<table align=center width=900px>
+		<tr>
+			<td width=400px>
+				<left>
+					<center><h2>Acknowledgements</h2></center>
+					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
+				</left>
+			</td>
+		</tr>
+	</table>
+
+<br>
+</body>
+</html>
+
