@@ -46,101 +46,109 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-    
-      <tr onmouseout="lotus_stop()" onmouseover="lotus_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='lotus_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/lotus_banner_img.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/lotus_banner_img.jpg' width="160">
-          </div>
-          <script type="text/javascript">
-            function lotus_start() {
-              document.getElementById('lotus_image').style.opacity = "1";
-            }
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr onmouseout="lotus_stop()" onmouseover="lotus_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='lotus_image'><video  width=100% height=100% muted autoplay loop>
+                    <source src="images/lotus_banner_img.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/lotus_banner_img.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function lotus_start() {
+                      document.getElementById('lotus_image').style.opacity = "1";
+                    }
 
-            function lotus_stop() {
-              document.getElementById('lotus_image').style.opacity = "0";
-            }
-            lotus_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="http://danivelikova.github.io/lotus/">
-            <span class="papertitle">LOTUS: Learning to Optimize Task-based US representations</span>
-          </a>
-          <br>
-          <strong>Yordanka Velikova</strong>,
-          <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>,
-          <a href="https://waltersimson.com/">Walter Simson</a>,
-          <a href="https://vgonzalezd.github.io/">Vanessa Gonzalez Duque</a>,
-          <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
-          <br>
-          <em>MICCAI 2023 (Oral Presentation)</em>
-          <br>
-          <a href="./lotus/">project page</a>
-          /
-          <a href="https://arxiv.org/abs/2307.16021">arXiv</a>
-          <p></p>
-          <p>
-          Optimizing Ulrasound Intermediate Representations guided by the segmentation task. Trained end-to-end with domain adaptation network to account for the domain gap between real and simulated.
-          </p>
+                    function lotus_stop() {
+                      document.getElementById('lotus_image').style.opacity = "0";
+                    }
+                    lotus_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/lotus/">
+                    <span class="papertitle">LOTUS: Learning to Optimize Task-based US representations</span>
+                  </a>
+                  <br>
+                  <strong>Yordanka Velikova</strong>,
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>,
+                  <a href="https://waltersimson.com/">Walter Simson</a>,
+                  <a href="https://vgonzalezd.github.io/">Vanessa Gonzalez Duque</a>,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
+                  <br>
+                  <em>MICCAI 2023 (Oral Presentation)</em>
+                  <br>
+                  <a href="./lotus/">project page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2307.16021">arXiv</a>
+                  <p></p>
+                  <p>
+                  Optimizing Ulrasound Intermediate Representations guided by the segmentation task. Trained end-to-end with domain adaptation network to account for the domain gap between real and simulated.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="cactuss_stop()" onmouseover="cactuss_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='lotus_image'><video  width=100% height=100% muted autoplay loop>
+                      <source src="images/cactuss_banner_img.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></div>
+                    <div id='cactuss_still'><img src="images/cactuss_banner_img.jpg"></div>
+                  </div>
+                  <script type="text/javascript">
+                    function cactuss_start() {
+                      document.getElementById('cactuss_anim').style.display = 'inline';
+                      document.getElementById('cactuss_still').style.display = 'none';
+                    }
+
+                    function cactuss_stop() {
+                      document.getElementById('cactuss_anim').style.display = 'none';
+                      document.getElementById('cactuss_still').style.display = 'inline';
+                    }
+                    cactuss_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/cactuss/">
+                    <span class="papertitle">CACTUSS: Common Anatomical CT-US Space for US examinations </span>
+                  </a>
+                  <br>
+                  <strong>Yordanka Velikova</strong>,  
+                  <a href="https://waltersimson.com/">Walter Simson</a>,
+                  <a>Mehrdad Salehi</a>,
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>,
+                  <a>MD Philipp Paprottka</a>,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
+                  <br>
+                  <em>MICCAI, 2022 (Oral Presentation)</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2207.08619">Arxiv</a> / <a href="https://github.com/danivelikova/cactuss">Code</a> 
+                  <p>By embedding mixtures of shapes &amp; lights into a soft segmentation of an image, and by leveraging the output of the Kinect, we can extend SIRFS to scenes.
+                    <br>
+                    <br>MICCAI Journal version: <a href="https://drive.google.com/file/d/1iQiUxZvjPPnb8rFCwXYesTgFSRk7mkAq/view?usp=sharing">version</a> / <a href="data/BarronMalikTPAMI2015B.bib">bibtex</a>
+                  </p>
+                </td>
+              </tr>      
+              
+            </tbody></table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:right;font-size:small;">
+                    Template webpage from <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </td>
       </tr>
-
-      <tr onmouseout="rgbd_stop()" onmouseover="rgbd_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div id='rgbd_anim' class='hidden'><img src="images/cactuss.gif"></div>
-            <div id='rgbd_still'><img src="images/cactuss-still.jpg"></div>
-          </div>
-          <script type="text/javascript">
-            function rgbd_start() {
-              document.getElementById('rgbd_anim').style.display = 'inline';
-              document.getElementById('rgbd_still').style.display = 'none';
-            }
-
-            function rgbd_stop() {
-              document.getElementById('rgbd_anim').style.display = 'none';
-              document.getElementById('rgbd_still').style.display = 'inline';
-            }
-            rgbd_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="http://danivelikova.github.io/cactuss/">
-            <span class="papertitle">CACTUSS: Common Anatomical CT-US Space for US examinations </span>
-          </a>
-          <br>
-          <strong>Yordanka Velikova</strong>,  <a href="https://waltersimson.com/">Walter Simson</a>
-          <br>
-          <em>MICCAI, 2022 (Oral Presentation)</em>
-          <br>
-          <a href="https://arxiv.org/abs/2207.08619">Arxiv</a> / <a href="https://github.com/danivelikova/cactuss">Code</a> 
-          <p>By embedding mixtures of shapes &amp; lights into a soft segmentation of an image, and by leveraging the output of the Kinect, we can extend SIRFS to scenes.
-            <br>
-            <br>MICCAI Journal version: <a href="https://drive.google.com/file/d/1iQiUxZvjPPnb8rFCwXYesTgFSRk7mkAq/view?usp=sharing">version</a> / <a href="data/BarronMalikTPAMI2015B.bib">bibtex</a>
-          </p>
-        </td>
-      </tr>      
-      
-    </tbody></table>
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr>
-        <td style="padding:0px">
-          <br>
-          <p style="text-align:right;font-size:small;">
-            Template webpage from <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
-          </p>
-        </td>
-      </tr>
-    </tbody></table>
-  </td>
-</tr>
-</table>
-</body>
+    </table>
+  </body>
 </html>

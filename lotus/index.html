@@ -245,7 +245,7 @@
 	<hr>
 	<center><h2>Video</h2></center>
 	<p align="center">
-		<iframe width="660" height="395" src="https://youtu.be/Esx3uf0XFIU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+		<iframe width="750" src="https://www.youtube.com/embed/Esx3uf0XFIU?si=aFi2wYO5qtz_994t" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
 	</p>
 
 
@@ -254,6 +254,12 @@
 	<div class="center">
         <img height="300"  src="resources/diff_renderer_pipeline.png" alt="Differentiable Ultrasound Renderer Pipeline">
     </div>
+	<tr>
+		<td>
+			<span style="font-size:14px"> 
+				Differentiable Ultrasound Renderer pipeline builds upon the mathematical foundations of ray tracing and ultrasound echo generation. The renderer takes a 2D label map with tissue labels as input, where each tissue label is assigned five parameters that describe ultrasound-specific tissue characteristics and control the rendering generation.: attenuation coefficient, acoustic impedance, and three parameters defining speckle distribution. The renderer generates three sub-maps: attenuation, reflection, and scatter maps, by modeling ultrasound waves as rays starting from the transducer and propagating through media using physical laws.
+		</td>
+	</tr>
 
 
 	<!-- LOTUS animation-->
@@ -270,7 +276,8 @@
 						</video>	
 						<script>
 							document.getElementById('lotusVideo').playbackRate = 1.2;
-						</script>				
+						</script>	
+						We run LOTUS for for five segmentation tasks. The training data is generated on the fly and a separate segmentation network is trained for each task. Initially the images are rendered with default renderer's parameters and then iteratively refined during training to produce optimized images for each specific task. The spine, kidney, and liver progressively brighten, while vessels darken, and surrounding smaller organs fade, creating a homogeneous background and enhancing the primary organ's visibility in the ultrasound simulations.
 					</center>
 				</td>
 			</tr>
@@ -283,6 +290,7 @@
 	<div class="center">
         <img  height="300"  src="resources/overview.png" alt="End-to-End Training Pipeline">
     </div>
+	During training, US-like images are rendered from CT label maps and used as training data. The ultrasound renderer learns to optimize the parameters based on the downstream segmentation task. At the same time, we train an unpaired and unsupervised image style transfer network between real and rendered images to achieve simultaneous image synthesis as well as automatic segmentation on US images in an end-to-end training setting.
 
 	<hr>
 
@@ -291,6 +299,7 @@
         <img  width="800" height="600"  src="resources/inference_results.png" alt="Results during inference">
     </div>
 
+	Results during inference: real US images are first passed trough the image adaptation network and then through the segmentation network. The real US images are translated to the optimized US image appearance, which was learned during the training for the task of vessels segmentation.
 
 
 	
@@ -299,7 +308,7 @@
 			<td width=400px>
 				<left>
 					<center><h2>Acknowledgements</h2></center>
-					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
+					Template webpage from <a href="https://github.com/richzhang/webpage-template">source code</a>.
 				</left>
 			</td>
 		</tr>
