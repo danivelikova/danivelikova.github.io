@@ -1,0 +1,6 @@
+@inproceedings{Velikova2022CACTUSSCA,
+  title={CACTUSS: Common Anatomical CT-US Space for US examinations},
+  author={Yordanka Velikova and Walter Simson and Mehrdad Salehi and Mohammad Farid Azampour and Philipp M. Paprottka and Nassir Navab},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  year={2022},
+}
