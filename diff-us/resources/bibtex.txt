@@ -1,0 +1,9 @@
+@misc{domínguez2024diffusionsoundpropagationphysicsinspired,
+      title={Diffusion as Sound Propagation: Physics-inspired Model for Ultrasound Image Generation}, 
+      author={Marina Domínguez and Yordanka Velikova and Nassir Navab and Mohammad Farid Azampour},
+      year={2024},
+      eprint={2407.05428},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2407.05428}, 
+}

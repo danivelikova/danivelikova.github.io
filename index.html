@@ -51,6 +51,154 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <tr onmouseout="diffusion_stop()" onmouseover="diffusion_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div id='diffusion_still'><img src="images/diff-us-gif.gif" width="160"></div>
+                  <script type="text/javascript">
+                    function diffusion_start() {
+                      document.getElementById('diffusion_anim').style.display = 'inline';
+                      document.getElementById('diffusion_still').style.display = 'none';
+                    }
+              
+                    function diffusion_stop() {
+                      document.getElementById('diffusion_anim').style.display = 'none';
+                      document.getElementById('diffusion_still').style.display = 'inline';
+                    }
+                    diffusion_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/diff-us/">
+                    <span class="papertitle">Diffusion as Sound Propagation: Physics-inspired Model for Ultrasound Image Generation</span>
+                  </a>
+                  <br>
+                  Marina Domínguez*,  
+                  <strong>Yordanka Velikova*</strong>,  
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>,  
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>
+                  <br>
+                  <em>MICCAI 2024 (Oral Presentation)</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2407.05428v1">Arxiv</a> / <a href="https://github.com/marinadominguez/diffusion-for-us-images">Code</a>
+                  <p>
+                    A physics-inspired diffusion model for ultrasound image generation, simulating sound wave propagation for realistic ultrasound image synthesis.
+                  </p>
+                </td>
+              </tr>
+
+              
+              <tr onmouseout="spectralmethods_stop()" onmouseover="spectralmethods_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div id='spectralmethods_still'><img src="images/spectralmethods_banner_img.jpg" width="160"></div>
+                  <script type="text/javascript">
+                    function spectralmethods_start() {
+                      document.getElementById('spectralmethods_anim').style.display = 'inline';
+                      document.getElementById('spectralmethods_still').style.display = 'none';
+                    }
+              
+                    function spectralmethods_stop() {
+                      document.getElementById('spectralmethods_anim').style.display = 'none';
+                      document.getElementById('spectralmethods_still').style.display = 'inline';
+                    }
+                    spectralmethods_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://yourprojectlink.com/">
+                    <span class="papertitle">Deep Spectral Methods for Unsupervised Ultrasound Image Interpretation</span>
+                  </a>
+                  <br>
+                  Oleksandra Tmenova*,  
+                  <strong>Yordanka Velikova*</strong>,  
+                  <a href="https://mahdi-slh.github.io/">Mahdi Saleh</a>,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
+                  <br>
+                  <em>MICCAI 2024</em>
+                  <br>
+                  <a href="https://arxiv.org/pdf/2408.02043">Arxiv</a> / <a href="https://github.com/alexaatm/UnsupervisedSegmentor4Ultrasound">Code</a>
+                  <p>
+                    A novel deep spectral method for unsupervised interpretation of ultrasound images, advancing segmentation techniques through spectral clustering.
+                  </p>
+                </td>
+              </tr>
+              
+              <tr onmouseout="shapecompletion_stop()" onmouseover="shapecompletion_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div id='shapecompletion_still'><img src="images/shape-compl-us.png" width="160"></div>
+                  <script type="text/javascript">
+                    function shapecompletion_start() {
+                      document.getElementById('shapecompletion_anim').style.display = 'inline';
+                      document.getElementById('shapecompletion_still').style.display = 'none';
+                    }
+              
+                    function shapecompletion_stop() {
+                      document.getElementById('shapecompletion_anim').style.display = 'none';
+                      document.getElementById('shapecompletion_still').style.display = 'inline';
+                    }
+                    shapecompletion_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/shape-completion-us/">
+                    <span class="papertitle">Shape completion in the dark: completing vertebrae morphology from 3D ultrasound</span>
+                  </a>
+                  <br>
+                  Miruna-Alexandra Gafencu,
+                  <strong>Yordanka Velikova</strong>,  
+                  <a href="https://mahdi-slh.github.io/">Mahdi Saleh</a>,
+                  Tamas Ungi,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>,  
+                  Thomas Wendler,
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>
+                  <br>
+                  <em>International Journal of Computer Assisted Radiology and Surgery (IJCARS), 2024</em>
+                  <br>
+                  <a href="https://arxiv.org/pdf/2404.07668">Arxiv</a> / <a href="https://github.com/miruna20/Shape-Completion-in-the-Dark">Code</a>
+                  <p>
+                    This project addresses the challenge of completing vertebrae morphology from 3D ultrasound imaging, using novel shape completion techniques even in low-visibility or incomplete datasets.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="breathingcomp_stop()" onmouseover="breathingcomp_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div id='breathingcomp_still'><img src="images/breath-comp-banner.png" width="160"></div>
+                  <script type="text/javascript">
+                    function breathingcomp_start() {
+                      document.getElementById('breathingcomp_anim').style.display = 'inline';
+                      document.getElementById('breathingcomp_still').style.display = 'none';
+                    }
+              
+                    function breathingcomp_stop() {
+                      document.getElementById('breathingcomp_anim').style.display = 'none';
+                      document.getElementById('breathingcomp_still').style.display = 'inline';
+                    }
+                    breathingcomp_stop()
+                  </script>
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://danivelikova.github.io/INR-3DUS/">
+                    <span class="papertitle">Implicit Neural Representations for Breathing-compensated Volume Reconstruction in Robotic Ultrasound</span>
+                  </a>
+                  <br>
+                  <strong>Yordanka Velikova</strong>,  
+                  <a href="https://scholar.google.de/citations?user=MQcHEBsAAAAJ&hl=en">Mohammad Farid Azampour</a>,
+                  <a href="https://waltersimson.com/">Walter Simson</a>,  
+                  Marco Esposito,
+                  <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>
+                  <br>
+                  <em>2024 ICRA</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2311.04999">Arxiv</a> / <a href="https://github.com/danivelikova/INR-3DUS">Code</a> 
+                  <p>
+                    This project focuses on using implicit neural representations to reconstruct 3D volumes from robotic ultrasound while compensating for respiratory motion during scanning.
+                  </p>
+                </td>
+              </tr>
+              
+              
               <tr onmouseout="lotus_stop()" onmouseover="lotus_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
