@@ -51,21 +51,27 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-
+              
               <tr onmouseout="diffusion_stop()" onmouseover="diffusion_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div id='diffusion_still'><img src="images/diff-us-gif.gif" width="160"></div>
+                  <!-- Still image -->
+                  <div id='diffusion_still'><img src="images/diff-us-still.jpg" width="160"></div>
+                  
+                  <!-- Animated GIF, initially hidden -->
+                  <div id='diffusion_anim' style="display:none;"><img src="images/diff-us-gif.gif" width="160"></div>
+              
                   <script type="text/javascript">
                     function diffusion_start() {
-                      document.getElementById('diffusion_anim').style.display = 'inline';
-                      document.getElementById('diffusion_still').style.display = 'none';
+                      document.getElementById('diffusion_anim').style.display = 'inline';  // Show GIF
+                      document.getElementById('diffusion_still').style.display = 'none';   // Hide still image
                     }
               
                     function diffusion_stop() {
-                      document.getElementById('diffusion_anim').style.display = 'none';
-                      document.getElementById('diffusion_still').style.display = 'inline';
+                      document.getElementById('diffusion_anim').style.display = 'none';    // Hide GIF
+                      document.getElementById('diffusion_still').style.display = 'inline'; // Show still image
                     }
-                    diffusion_stop()
+              
+                    diffusion_stop(); // Initially hide the GIF and show the still image
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
