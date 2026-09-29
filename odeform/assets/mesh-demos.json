@@ -58,22 +58,22 @@
   },
   "geometry": {
     "5": {
-      "label": "Flipflop 5",
+      "label": "Flipflop 1",
       "src": "assets/unseen-flipflop-5.mp4",
       "poster": "assets/unseen-flipflop-5.jpg"
     },
     "6": {
-      "label": "Flipflop 6",
+      "label": "Flipflop 2",
       "src": "assets/unseen-flipflop-6.mp4",
       "poster": "assets/unseen-flipflop-6.jpg"
     },
     "7": {
-      "label": "Flipflop 7",
+      "label": "Flipflop 3",
       "src": "assets/unseen-flipflop-7.mp4",
       "poster": "assets/unseen-flipflop-7.jpg"
     },
     "9": {
-      "label": "Flipflop 9",
+      "label": "Flipflop 4",
       "src": "assets/unseen-flipflop-9.mp4",
       "poster": "assets/unseen-flipflop-9.jpg"
     }
